@@ -3,7 +3,7 @@ import Axios from 'axios'
 const ApiClient = Axios.create({
   baseURL:
     process.env.NODE_ENV === 'production'
-      ? `${window.location.href}api`
+      ? `${window.location.origin}/api`
       : 'http://localhost:3001/api'
 })
 
